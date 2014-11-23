@@ -19,8 +19,7 @@ origTotal = copy.length;
 cycle();
 nextQuestion();
 $("#score").html(score);
-$("#count").html(count);
-$("#total").html(totalQ);
+$("#count").html(count + " of " + origTotal);
 });
 
 function cycle(){
@@ -40,8 +39,7 @@ $( "#nextbutton" ).click(function() {
   totalQ--;
   choose();
   $("#score").html(score);
-  $("#count").html(count);
-  $("#total").html(totalQ);
+  $("#count").html(count + " of " + origTotal);
   clear();
   cycle();
   nextQuestion();
@@ -54,9 +52,9 @@ $( "#backbutton" ).click(function() {
       count--;
       if (totalQ < 10){
         totalQ++;
-        $("#total").html(totalQ);
+        $("#count").html(count + " of " + origTotal);
       }
-      $("#count").html(count);
+      $("#count").html(count + " of " + origTotal);
       $('#photo').html("");
       set.unshift(nextq);
       nextq = set.pop();
@@ -73,7 +71,7 @@ function nextQuestion(){
   $("input[value='2']").next().text(nextq.choices[2]);
   $("input[value='3']").next().text(nextq.choices[3]);
   //$("<img src='img/photo.png'>").appendTo('#photo');
-  $("<img src='img/" + nextq.filename + "'>").appendTo('#photo');
+  $("<img src='img/" + nextq.filename + "'>").hide().appendTo('#photo').fadeIn(4000);
   $('#credits').html(nextq.credits);
 }
 
@@ -106,14 +104,17 @@ function lowerscore() {
 
 function choose(){
    if (select == nextq.answer) {
-      $("#correct").html("Correct!");
+      $("#correct").fadeTo(1000, 1);
+      $("#correct").html("Correct!").fadeIn().fadeTo(4000, 0);
       $("#correct").css( "color", "green" );
       score++;
       rightanswers = [];  // need to erase the points earned if back button is used
       rightanswers.push(nextq); 
       $("#score").html(score);
     }
-  else {$("#correct").html("Sorry, that's not correct.");
+  else {
+      $("#correct").fadeTo(1000, 1);
+      $("#correct").html("Sorry, that's not correct.").fadeIn().fadeTo(4000, 0);
       $("#correct").css( "color", "red" );
        };
 }

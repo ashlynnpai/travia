@@ -6,47 +6,46 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
+  
 <div class="wrapper">   
   <img src="img/mtn.png">
-  <h1>Travel Trivia</h1> 
-  <div class="sc">    
+    <div class="sc">    
     <p>Score: </p><p id="score"></p><br>
-    <p>Question Number: </p><p id="count"></p><br>
-    <p>Questions Remaining: </p><p id="total"></p>
-  </div>
-    
-  <p id="correct"></p>
+    <p>Question </p><p id="count"></p><br>
+  </div>  
+  <h1 id="correct">Travia</h1> 
+
   <div id="photo"></div>    
   <form>
-  <p id ="askQ">Question:</p>
-  <div class="radios">    
-  <div>
-    <label>
-      <input type="radio" name="answer" value="0" id="r0"/>
-      <span></span>
-    </label>
-  </div>        
-   <div>
-      <label>
-        <input type="radio" name="answer" value="1" id="r1"/>
-        <span></span>
-      </label>
-    </div> 
+    <p id ="askQ">Question:</p>
+    <div class="radios">    
     <div>
       <label>
-        <input type="radio" name="answer" value="2" id="r2"/>
+        <input type="radio" name="answer" value="0" id="r0"/>
         <span></span>
       </label>
-    </div> 
-   <div>
-      <label>
-        <input type="radio" name="answer" value="3" id="r3"/>
-        <span></span>
-      </label>
-    </div> 
-    </div>
-    <input type="button" value="Back" class="button" id="backbutton"/>   
-    <input type="button" value="Next" class="button" id="nextbutton"/>   
+    </div>        
+     <div>
+        <label>
+          <input type="radio" name="answer" value="1" id="r1"/>
+          <span></span>
+        </label>
+      </div> 
+      <div>
+        <label>
+          <input type="radio" name="answer" value="2" id="r2"/>
+          <span></span>
+        </label>
+      </div> 
+     <div>
+        <label>
+          <input type="radio" name="answer" value="3" id="r3"/>
+          <span></span>
+        </label>
+      </div> 
+      </div>
+      <input type="button" value="Back" class="button" id="backbutton"/>   
+      <input type="button" value="Next" class="button" id="nextbutton"/>   
     </form>
 </div>
 </body>

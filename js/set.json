@@ -8,7 +8,7 @@
   "4":
   {"question": "Where is this photo from?", "choices": ["Cairo", "Pyongyang", "Shanghai", "Moscow"], "answer": 1, "filename": "Gilliland.jpg", "credits": "Clay Gilliland, CC by SA 2.0, https://flic.kr/p/ihjaJ6"}, 
   "5":
-  {"question": "Where is this statue", "choices": ["Greece", "China", "Israel", "Iran"], "answer": 3, "filename": "Najafi.jpg", "credits": "Hamid Najafi, CC by ND 2.0, https://flic.kr/p/4DmCFu"},
+  {"question": "Where is this statue?", "choices": ["Greece", "China", "Israel", "Iran"], "answer": 3, "filename": "Najafi.jpg", "credits": "Hamid Najafi, CC by ND 2.0, https://flic.kr/p/4DmCFu"},
    "6":
   {"question": "Where is this photo from?", "choices": ["Alaska", "Norway", "New Zealand", "Japan"], "answer": 2, "filename": "Parkinson.jpg", "credits": "Tim Parkinson, CC by 2.0, https://flic.kr/p/pkUUc"},
    "7":
