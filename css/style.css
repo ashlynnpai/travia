@@ -1,0 +1,66 @@
+html, body {
+  background: #FFFFD2;
+}
+
+.wrapper {
+    margin: 50px auto 0;
+    max-width: 900px;
+    text-align: center;
+    font-family: 'Chelsea Market', sans-serif;
+}
+
+form { 
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+form p {
+    font-size: 22px;
+}
+    
+
+form label {
+    font-size: 20px;   
+}
+
+.radios {
+    text-align: left;
+    margin-left: 100px;   
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="button"] {
+    display: inline-block;
+    border: 1px solid #848484;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 20px 30px;
+    padding: 5px;
+    border: 2px solid #000;
+    font-family: 'Chelsea Market', sans-serif;
+}
+
+input[type="button"]:hover {
+    background: #9FFFFF;
+}
+
+label:hover {
+    background-color: #9FFFFF;
+}
+
+.sc p {
+    font-size: 16px;
+    display: inline;
+}
+
+#correct {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Chelsea Market', sans-serif;
+}
+

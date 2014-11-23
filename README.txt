@@ -1,0 +1,1 @@
+A travel quiz where the user guesses the location of the photo.  Uses jQuery and the questions are stored in a JSON file.
